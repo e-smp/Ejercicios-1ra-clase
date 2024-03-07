@@ -14,3 +14,5 @@ a.2) Usar estructura condicional/selección doble
 Ejercicios a desarrollar
 """
 
+edadComprador=input("Ingrese su edad: ")
+precioEntrada=10000
