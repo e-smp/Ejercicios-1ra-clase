@@ -14,5 +14,24 @@ a.2) Usar estructura condicional/selección doble
 Ejercicios a desarrollar
 """
 
-edadComprador=input("Ingrese su edad: ")
+edadComprador=int(input("Ingrese la edad para indicar el descuento según su categoría: "))
 precioEntrada=10000
+descuentoEntrada=float
+
+if edadComprador <5:
+    print("Las personas con una edad menor a 5 años no pueden ingresar al teatro.")
+elif edadComprador >=5 and edadComprador <=14:
+    descuentoEntrada = precioEntrada*0.35
+    print(f"El descuento de la categoría 1 es de: {descuentoEntrada}$")
+elif edadComprador >=15 and edadComprador <=19:
+    descuentoEntrada = precioEntrada*0.25
+    print(f"El descuento de la categoría 2 es de: {descuentoEntrada}$")
+elif edadComprador >=20 and edadComprador <=45:
+    descuentoEntrada = precioEntrada*0.10
+    print(f"El descuento de la categoría 3 es de: {descuentoEntrada}$")
+elif edadComprador >=46 and edadComprador <=65:
+    descuentoEntrada = precioEntrada*0.25
+    print(f"El descuento de la categoría 4 es de: {descuentoEntrada}$")
+else:
+    descuentoEntrada = precioEntrada*0.35    
+    print(f"El descuento de la categoría 5 es de: {descuentoEntrada}$")
